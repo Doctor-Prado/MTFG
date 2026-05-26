@@ -70,7 +70,7 @@ export const content = {
       prices: [
         ['Пн / Ср / Пт — вечір', '2500 грн / 350 грн'],
         ['Пн / Ср / Пт — ранок', '2500 грн / 350 грн'],
-        ['Вт / Чт', '2000 грн / 300 грн'],
+        ['Вт / Чт  — вечір, Сб — ранок', '2000 грн / 300 грн'],
         ['Безлімітний абонемент', '4000 грн'],
       ],
     },
@@ -159,7 +159,7 @@ export const content = {
       prices: [
         ['Mon / Wed / Fri — evening', '2500 UAH / 350 UAH'],
         ['Mon / Wed / Fri — morning', '2500 UAH / 350 UAH'],
-        ['Tue / Thu', '2000 UAH / 300 UAH'],
+        ['Tue / Thu — evening, Sat — morning', '2000 UAH / 300 UAH'],
         ['Unlimited membership', '4000 UAH'],
       ],
     },
