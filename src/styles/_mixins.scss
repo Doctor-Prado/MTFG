@@ -1,0 +1,10 @@
+@mixin focus-ring {
+  outline: 3px solid rgba(153, 211, 220, 0.45);
+  outline-offset: 4px;
+}
+
+@mixin fluid-title {
+  font-size: clamp(2.6rem, 10vw, 7.5rem);
+  line-height: 0.92;
+  letter-spacing: -0.08em;
+}
