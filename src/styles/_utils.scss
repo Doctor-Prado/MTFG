@@ -1,0 +1,16 @@
+@use "sass:math";
+
+@function linear-interpolation($vw1, $fs1, $vw2, $fs2) {
+  @if $vw1 == $vw2 {
+    @error "Viewport widths must be different";
+  }
+
+  $slope: calc(($fs2 - $fs1) / ($vw2 - $vw1));
+  $a: $slope * 100;
+  $b: ($fs2 - $a * calc($vw2 / 100));
+
+  $min: min($fs1, $fs2);
+  $max: max($fs1, $fs2);
+
+  @return clamp(#{$min}px, calc(#{$a}vw + #{$b}px), #{$max}px);
+}

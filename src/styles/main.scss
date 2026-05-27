@@ -1,6 +1,7 @@
 @use "variables" as *;
 @use "mixins" as *;
 @use "reset";
+@use "./utils" as *;
 
 body {
   font-family:
@@ -571,8 +572,8 @@ h1 {
 }
 
 .coach-card__image {
-  height: 410px;
   background: #0b1517;
+  height: linear-interpolation(1121, 475, 1920, 500);
 
   img {
     width: 100%;
@@ -955,6 +956,9 @@ h1 {
   .coaches {
     grid-template-columns: repeat(2, 1fr);
   }
+  .coach-card__image {
+    height: linear-interpolation(881, 565, 1120, 725);
+  }
 }
 
 @media (max-width: 880px) {
@@ -997,6 +1001,10 @@ h1 {
   .schedule-layout {
     grid-template-columns: 1fr;
   }
+  .coach-card__image {
+    height: linear-interpolation(621, 390, 880, 562);
+  }
+
   .army__inner,
   .contacts__grid {
     grid-template-columns: 1fr;
@@ -1036,8 +1044,9 @@ h1 {
     grid-column: auto;
     min-height: 230px;
   }
+  // 2
   .coach-card__image {
-    height: 360px;
+    height: linear-interpolation(381, 480, 620, 810);
   }
   .price-row {
     flex-direction: column;
@@ -1073,8 +1082,9 @@ h1 {
   .hero__content {
     padding-top: 120px;
   }
+  // 1
   .coach-card__image {
-    height: 310px;
+    height: linear-interpolation(320, 400, 380, 482);
   }
   .feature-card {
     grid-template-columns: 1fr;
